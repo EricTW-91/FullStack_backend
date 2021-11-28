@@ -1,0 +1,30 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "username": "Jack",
+    "email": "jack@mail.com",
+    "password": "somepassword"
+}
+
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@mail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/post/newPost
+Content-Type: application/json
+
+{
+    "userID": "12345",
+    "title": "A new post!",
+    "content": "It's a raining day...."
+}
